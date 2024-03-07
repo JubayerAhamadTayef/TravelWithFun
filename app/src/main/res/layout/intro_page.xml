@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".Activites.MainActivity">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -57,11 +57,12 @@ and get new experiences"
                 />
 
             <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/introBtn"
                 android:layout_width="match_parent"
-                android:layout_height="56dp"
 
+                android:layout_height="56dp"
                 android:layout_marginStart="32dp"
-                android:layout_marginTop="64dp"
+                android:layout_marginTop="32dp"
                 android:layout_marginEnd="32dp"
                 android:layout_marginBottom="10dp"
                 android:layout_weight="1"
