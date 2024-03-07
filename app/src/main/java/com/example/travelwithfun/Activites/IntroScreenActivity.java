@@ -7,17 +7,18 @@ import android.view.View;
 import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
 
 import com.example.travelwithfun.R;
 
 public class IntroScreenActivity extends AppCompatActivity {
-    Button introBtn;
+    ConstraintLayout introBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_intro_screen);
-introBtn =(Button) findViewById(R.id.introBtn);
+introBtn =(ConstraintLayout) findViewById(R.id.introBtn);
 
 
 

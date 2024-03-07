@@ -29,7 +29,7 @@ private RecyclerView recyclerViewPopular, recyclerViewCategory;
         ArrayList<PopularDomain>items = new ArrayList<>();
         items.add(new PopularDomain("Rest In Resturant","Kusumvag, Moulvibazar","This is a on of the best resturant in Moulvibazar",2,true,5.0,"pic1",true,1000));
         items.add(new PopularDomain("Western Resturant","Sentral Road, Moulvibazar","This is a on of the best resturant in Moulvibazar",1,false,3.0,"pic2",false,2500));
-        items.add(new PopularDomain("Rest In Resturant","Kusumvag, Moulvibazar","This is a on of the best resturant in Moulvibazar",2,true,4.0,"pic1",true,1000));
+        items.add(new PopularDomain("Taj Metro","69 M.Saifur Rahman Road, Shera Town Plaza, 2nd floor, Moulvibazar","This is a on of the best resturant in Moulvibazar",2,true,4.0,"pic3",true,1000));
 
         recyclerViewPopular = findViewById(R.id.view_pop);
         recyclerViewPopular.setLayoutManager(new LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,false));
@@ -40,8 +40,8 @@ private RecyclerView recyclerViewPopular, recyclerViewCategory;
         catsList.add(new CategoryDomain("Beaches","cat1"));
         catsList.add(new CategoryDomain("Camps","cat2"));
         catsList.add(new CategoryDomain("Forest","cat3"));
-        catsList.add(new CategoryDomain("aldkf","cat4"));
-        catsList.add(new CategoryDomain("afdghjre","cat5"));
+        catsList.add(new CategoryDomain("Desert","cat4"));
+        catsList.add(new CategoryDomain("Mouth","cat5"));
 
         recyclerViewCategory=findViewById(R.id.view_cat);
         recyclerViewCategory.setLayoutManager(new LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,false));
