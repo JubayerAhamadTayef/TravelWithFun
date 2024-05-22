@@ -1,27 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activites.IntroScreenActivity">
+    tools:context=".Activites.IntroScreenActivity"
+    android:weightSum="5">
 
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="53dp">
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
 
             <ImageView
                 android:id="@+id/imageView2"
                 android:layout_width="match_parent"
-                android:layout_height="440dp"
+                android:layout_height="601dp"
+                android:layout_weight="3"
                 android:scaleType="fitXY"
                 android:src="@drawable/intro_img" />
 
@@ -30,6 +31,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
+                android:layout_weight="1"
                 android:text="Let's Enjoy The Beautiful Moulvibazar!"
                 android:textAlignment="center"
                 android:textColor="@color/black"
@@ -41,6 +43,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
+                android:layout_weight="0.50"
                 android:text="Explorer New Places In The Moulvibazar! \nAnd Get Some New Experiences!"
                 android:textAlignment="center"
                 android:textColor="@color/black"
@@ -54,6 +57,7 @@
                 android:layout_marginTop="16sp"
                 android:layout_marginEnd="32sp"
                 android:layout_marginBottom="16sp"
+                android:layout_weight="0.50"
                 android:background="@drawable/intro_btn">
 
                 <ImageView
@@ -87,4 +91,4 @@
         </LinearLayout>
     </ScrollView>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

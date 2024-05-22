@@ -82,7 +82,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:layout_marginBottom="8dp"
-                    android:text="Discover the Best Place\n To Travel"
+                    android:text="Discover the Best Place\nTo Travel"
                     android:textColor="@color/white"
                     android:textSize="28sp"
                     android:textStyle="bold" />
@@ -107,7 +107,7 @@
                         android:inputType="text"
                         android:padding="16dp"
                         android:textColor="@color/black"
-                        android:textColorHint="@color/black"
+                        android:textColorHint="@color/gray"
                         android:textSize="16sp" />
 
                     <androidx.constraintlayout.widget.ConstraintLayout

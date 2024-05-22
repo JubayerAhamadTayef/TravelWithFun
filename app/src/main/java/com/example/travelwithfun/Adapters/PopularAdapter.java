@@ -1,5 +1,6 @@
 package com.example.travelwithfun.Adapters;
 
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,6 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.resource.bitmap.CenterCrop;
 import com.bumptech.glide.load.resource.bitmap.GranularRoundedCorners;
+import com.example.travelwithfun.Activites.DetailsActivity;
 import com.example.travelwithfun.Domains.PopularDomain;
 import com.example.travelwithfun.R;
 
@@ -20,11 +22,11 @@ import java.util.ArrayList;
 
 public class PopularAdapter extends RecyclerView.Adapter<PopularAdapter.ViewHolder> {
     ArrayList<PopularDomain> items;
-    DecimalFormat formatter;
+
 
     public PopularAdapter(ArrayList<PopularDomain> items) {
         this.items = items;
-        formatter = new DecimalFormat("###,###,###,###");
+
     }
 
     @NonNull
@@ -42,6 +44,12 @@ holder.scoreTxt.setText(""+items.get(position).getScore());
 
 int drawableResId= holder.itemView.getResources().getIdentifier(items.get(position).getPic(),"drawable",holder.itemView.getContext().getPackageName());
 Glide.with(holder.itemView.getContext()).load(drawableResId).transform(new CenterCrop(), new GranularRoundedCorners(40,40,40,40)).into(holder.picImg);
+
+holder.itemView.setOnClickListener(v -> {
+    Intent intent = new Intent(holder.itemView.getContext(), DetailsActivity.class) ;
+    intent.putExtra("object",items.get(position));
+    holder.itemView.getContext().startActivity(intent);
+});
 
     }
 
